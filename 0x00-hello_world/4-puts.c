@@ -2,7 +2,7 @@
 
 /**
 * main - print the string in the put function
-* Description: use the main function
+* Description: using the main function
 * this programme prints "Programming is like building a multilingual puzzle
 * return: 0
 */
