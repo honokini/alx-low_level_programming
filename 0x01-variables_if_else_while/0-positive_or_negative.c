@@ -3,15 +3,17 @@
 #include <stdio.h>
 
 /**
- * main - entry point
+ * main - Entry point
  *
  * Return: Always 0 (Success/correct)
  */
 int main(void)
 {
-	int n,
+	int n;
+
 	    srand(time(0));
-	n=rand() - RANDMAX / 2;
+	n = rand() - RAND_MAX / 2;
+
 	if (n==0)
 	{
 		printf("%i is zero\n", n);
@@ -24,7 +26,7 @@ int main(void)
 
 	else
 	{
-		print("%i is positive\n", n);
+		printf("%i is positive\n", n);
 	}
 
 	return (0);
