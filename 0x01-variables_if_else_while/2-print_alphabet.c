@@ -6,11 +6,13 @@
 *
 * Description: using the main function
 * this program prints "Programmin is positive,zero, or negative"
-*  Return: 0
+* Return: 0
 */
-int main(void){ 
+int main(void)
+{ 
 char ch;
-for (ch = 'a'; ch <= 'z'; ch++){
+for (ch = 'a'; ch <= 'z'; ch++)
+{
 putchar(ch);
 }
 putchar('\n');
