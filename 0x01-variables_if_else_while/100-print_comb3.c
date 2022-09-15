@@ -1,3 +1,16 @@
+#include <time.h>
+#include <stdio.h>
+/**
+*
+*
+*Description: using the main function
+*
+*
+*
+*
+*/
+int main()
+{
 int n1 = 0, n2;
 while(n1 <= 9)
 {
