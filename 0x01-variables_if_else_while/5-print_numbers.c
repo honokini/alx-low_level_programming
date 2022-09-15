@@ -1,4 +1,3 @@
-#include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
 /**
@@ -17,5 +16,4 @@ printf("%i", i);
 }
 printf("\n");
 return (0);
-
-}}
+}
