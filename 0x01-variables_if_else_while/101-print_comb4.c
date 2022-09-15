@@ -39,6 +39,6 @@ putchar(' ');
 }
 ++n1;
 }
-putchar('\');
+putchar('\n');
 return 0;
 }
