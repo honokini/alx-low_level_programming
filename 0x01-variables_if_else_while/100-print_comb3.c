@@ -19,7 +19,7 @@ int main()
                                 putchar(' ');
 
 			}
-			putchar('i + '0');
+			putchar(i + '0');
                         putchar(j + '0');
 
 		}
