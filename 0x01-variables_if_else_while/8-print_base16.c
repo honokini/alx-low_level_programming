@@ -2,19 +2,18 @@
 #include <time.h>
 #include <stdio.h>
 /**
-*main - print if the number is positive, zero, or negative
+*main - prints a hexadecimal string
 *
-*Description: using the main function
-*this program prints "Programming is positive, zeri, or negative
-*Return: 0
+*Return: Always (Success)
 */
 int main(void)
 {
-int i;
-for (i = '0'; i <= '9'; i++)
-{
-printf("%i", i);
-}
-printf("\n");
-return (0);
+	int i;
+	for (i = '0'; i <= '9'; i++)
+	{
+		putchar(i);
+	}
+	putchar('\n');
+
+	return (0);
 }
