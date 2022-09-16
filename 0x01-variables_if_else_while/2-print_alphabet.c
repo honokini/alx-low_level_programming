@@ -4,7 +4,7 @@
 /**
 * main - lowercase alphabets
 *
-* Return:  Always(Success)
+* Return:  Always (Success)
 */
 int main(void)
 { 
@@ -17,4 +17,5 @@ putchar(ch);
 
 putchar('\n');
 return (0);
+
 }
