@@ -1,38 +1,28 @@
 #include <time.h>
 #include <stdio.h>
 /**
+* main - print single digit numbers starting from 0
 *
-*
-*Description: using the main function
-*
-*
-*
-*
+* Return: return zero at the end
 */
 int main()
 {
-int n1 = 0, n2;
-while(n1 <= 9)
-{
-n2 = 0;
-while(n2 <= 9)
-{
+	int i;
+	int j;
 
-if(n1 != n2 && n1 < n2)
-{
-putchar(n1 + 48);
-putchar(n2 + 48);
-
-if (n1 + n2 != 17)
-{
-putchar(',');
-putchar(' ');
-}
-}
-++n2;
-}
-++n1;
+	for (i = 0; i <= 9; i++)
+	{
+		for (j = 1; j <=9; j++)
+		{
+			if (j>i)
+			{
+				putchar(i + '0');
+				putchar(j + '0');
+			}
+		}
+	}
 }
 putchar('\n');
-return 0;
+
+return (0);
 }
