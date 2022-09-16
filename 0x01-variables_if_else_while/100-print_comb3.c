@@ -17,9 +17,7 @@ int main()
 			{
 				putchar(i + '0');
                                 putchar(j + '0');
-
-				putchar(',');
-                                putchar(' ');
+                               
 
 			}
 
@@ -27,6 +25,8 @@ int main()
 	
 
 putchar('\n');
+putchar(',');
+putchar(' ');
 
 return (0);
 }
