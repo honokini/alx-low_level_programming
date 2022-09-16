@@ -2,40 +2,32 @@
 #include <stdio.h>
 /**
 *
+* main - print possible combination of two 2-gigit
+* numbers
 *
-*Description: using the main function
-*
-*
-*
-*
+* Return: return zero at the end
 */
-int main()
+int main(void)
 {
-int n1 = 0, n2;
-while (n1 <= 99)
-{n2 = n1;
+int i, p;
 
-while(n2 <= 99)
+for (i = 0; i <= 100; i++)
 {
-if (n2 != n1)
-{
-putchar((n1 / 10) + 48);
-putchar((n1 % 10) + 48);
-putchar(' ');
-putchar((n2 / 10) + 48);
-putchar((n2 % 10) + 48);
-
-if (n1 != 98 || n2 != 98)
-{
-putchar(',');
-putchar(' ');
+	for (p = 0; p < 100; p++)
+	{
+		if (p > i)
+		{
+			putchar((i / 10) + '0');
+			putchar((i % 10) + '0');
+			putchar(' ');
+			putchar((p / 10) + '0');
+			putchar((p % 10) + '0');
+		}
+	}
+}
 
 }
-}
-++n2;
-}
-++n1;
-}
+
 putchar('\n');
 return 0;
 }
