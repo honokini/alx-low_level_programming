@@ -15,12 +15,13 @@ int main()
 		{
 			if (j > i)
 			{
+				putchar(i + '0');
+                                putchar(j + '0');
+
 				putchar(',');
                                 putchar(' ');
 
 			}
-			putchar(i + '0');
-                        putchar(j + '0');
 
 		}
 	
