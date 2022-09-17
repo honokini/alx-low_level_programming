@@ -18,13 +18,17 @@ void times_tables(void)
 		        prod = num * mult;
 
 		        if(prod <= 9)
+			{
 		
 			        _putchar(' ');
+			}
 		
 		else
+		{
 		
 			        _putchar((prod / 10 + '0');
-		_putchar((prod % 10) + '0');
+		                _putchar((prod % 10) + '0');
+		}
 	}
 	 _putchar('\n');
    }
