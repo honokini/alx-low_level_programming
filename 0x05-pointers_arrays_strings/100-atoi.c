@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * _atoi - convert string to an integer.
  * @s: pointer to a character string.
@@ -27,6 +28,5 @@ int _atoi(char *s)
 			temp++;
 		} while (*temp >= '0' && *temp <= '9');
 	}
-
-return (num * sign);
+	return (num * sign);
 }
