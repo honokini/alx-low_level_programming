@@ -16,6 +16,6 @@ char *_strcp(char *dest, char *str)
 		dest++;
 		scr++;
 	}
-	*destv= '\0';
+	*dest = '\0';
 	return (start);
 }
