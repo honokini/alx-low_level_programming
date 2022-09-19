@@ -5,7 +5,7 @@
  *
  * Return: void.
  */
-voi rev_string(char *s)
+void rev_string(char *s)
 {
 	int i, j, k, temp;
 
