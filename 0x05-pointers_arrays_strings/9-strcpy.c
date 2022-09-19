@@ -6,7 +6,7 @@
  *
  * Return: This returns copy
  */
-char *_strcp(char *dest, char *str)
+char *_strcpy(char *dest, char *str)
 {
 	char *start = dest;
 
