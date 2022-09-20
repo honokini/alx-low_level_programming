@@ -4,9 +4,9 @@
  * @dest: This is destiny
  * @src: This is the copia
  *
- * Return: This returns copy
+ * Return: This return copy
  */
-char *_strcpy(char *dest, char *str)
+char *_strcpy(char *dest, char *src)
 {
 	char *start = dest;
 
