@@ -1,5 +1,7 @@
-#ifndef MAIN_H
-#define MAIN_H
+#ifndef MAIN_H_INCLUDED
+#define MAIN_H_INCLUDED
+
+#include<stdio.h>
 
 /**
  * main - header file for prototypes
@@ -13,8 +15,9 @@ void print_line(int n);
 void print_diagonal(int n);
 void print_square(int size);
 void print_number(int n);
-int _putchar(char);
-int _isupper(int);
-int _isdigit(int);
-int mul(int, int);
-#endif /* MAIN_H */
+int _putchar(char c);
+int _isupper(int c);
+int _isdigit(int c);
+int mul(int a, int b);
+
+#endif
