@@ -2,7 +2,7 @@
 #define MAIN_H
 
 /**
- * FFile: main.h
+ * File: main.h
  * Auth: sam tech(Samuel birhanu)
  * Desc: Header file containing prototypes for all functions
  *      used in the 0x06. c - More pointers, arrays and strings directory
@@ -25,4 +25,4 @@ void print_buffer(char *b, int size);
 char *add_strings(char *n1, char *n2, char *r, int r_index);
 
 
-#endif MAIN_H
+#endif 
