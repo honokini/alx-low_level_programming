@@ -1,14 +1,11 @@
 #ifndef MAIN_H
 #define MAIN_H
-
+#include <stdio.h>
 /**
- * File: main.h
- * Auth: sam tech(Samuel birhanu)
- * Desc: Header file containing prototypes for all functions
- *      used in the 0x06. c - More pointers, arrays and strings directory
+ * void prototypes()
+ * int prototypes()
+ * char prototypes()
  */
-
-
 int _putchar(char c);
 char *_strcat(char *dest, char *src);
 char *_strncat(char *dest, char *src, int n);
@@ -25,4 +22,4 @@ void print_buffer(char *b, int size);
 char *add_strings(char *n1, char *n2, char *r, int r_index);
 
 
-#endif 
+#endif /*MAIN_H*/
