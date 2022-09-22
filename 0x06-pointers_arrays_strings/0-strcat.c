@@ -1,7 +1,6 @@
 #include "main.h"
 
 /**
-
  * @dest: string that will be appended
  * @src: string to be concatenated upon
  *
