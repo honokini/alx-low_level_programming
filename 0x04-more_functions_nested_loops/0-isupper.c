@@ -11,7 +11,7 @@
  *         otherwise always 0 (Success)
  */
 
-int_isupper(int c)
+int _isupper(int c)
 {
 	if (c >= 'A' && c <= 'z')
 		return (1);
