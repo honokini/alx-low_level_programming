@@ -15,7 +15,6 @@ char *_strchr(char *s, char c)
 		{
 			return (s); /*return s*/
 		}
-
 		++s;
 	}
 
@@ -25,5 +24,5 @@ char *_strchr(char *s, char c)
 
 	}
 
-	return (0);/* values null*/
+	return (0);/*values null*/
 }
