@@ -13,5 +13,4 @@ int _evaluate(int i, int n)
 	else if (i * i < n)
 		return (i);
 	return (- 1);
-	return (- 1);
 }
