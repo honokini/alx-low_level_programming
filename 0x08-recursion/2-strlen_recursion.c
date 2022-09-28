@@ -2,7 +2,7 @@
 /**
  * _strlen_recursion - length of a string
  * @s: pointer block of memory to fill
- * Return strln_recursion
+ * Return: strln_recursion
  */
 int _strlen_recursion(char *s)
 {
@@ -13,4 +13,3 @@ int _strlen_recursion(char *s)
 		else
 			return (1 + _strlen_recursion(s + 1)); /*Sum 1*/
 }
-
