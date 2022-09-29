@@ -19,7 +19,7 @@ return (i);
 
 return (-1);
 
-return (-1)
+return (-1);
 }
 /**
  *  *_sqrt_recursion - evaluate sqrt
