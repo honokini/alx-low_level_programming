@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * _evaluate - evaluate function sqrt
  * @i: integer
@@ -8,19 +9,17 @@
 
 int _evaluate(int i, int n)
 {
-/*Evaluate function*/
-if (n == 0 || n == 1)
-return (n);
+	/*Evaluate function*/
+	if (n == 0 || n == 1)
+		return (n);
+	else if (i * i < n)
+		return (_evaluate(i + 1, n));
+	else if (i * i == n) /*Condition base*/
+		return (i);
 
-else if (i * i < n)
-return (_evaluate(i + 1, n));
+	return (-1);
 
-else if (i * i == n) /*Condition base*/
-return (i);
-
-return (-1);
-
-return (-1);
+	return (-1);
 }
 /**
  *  *_sqrt_recursion - evaluate sqrt
@@ -36,6 +35,7 @@ int _sqrt_recursion(int n)
 		return (-1);
         else
         {
-                return (_evaluate(i, n)); /*Recursive call*/
+                return (_evaluate(i, n));
+		/*Recursive call*/
 	}
 }
