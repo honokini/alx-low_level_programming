@@ -15,4 +15,5 @@ else if (i * i == n) /*Condition base*/
 return (i);
 return (-1);
 return (-1);
+;
 }
