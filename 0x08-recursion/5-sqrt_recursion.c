@@ -20,7 +20,7 @@ int _evaluate(int i, int n)
 	return (-1);
 }
 /**
- * sqrt_recursion - evaluate sqrt
+ * _sqrt_recursion - evaluate sqrt
  * @n: integer
  * Return: Sqrt_recursion
  */
