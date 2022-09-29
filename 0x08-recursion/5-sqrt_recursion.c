@@ -6,7 +6,6 @@
  * @n: integer
  * Return: evaluate sqrt
  */
-
 int _evaluate(int i, int n)
 {
 	/*Evaluate function*/
@@ -26,7 +25,6 @@ int _evaluate(int i, int n)
  *   *@n: integer
  *    *Return: Sqrt_recursion
  *    */
-
 int _sqrt_recursion(int n)
 {
         int i = 0;
@@ -35,7 +33,6 @@ int _sqrt_recursion(int n)
 		return (-1);
         else
         {
-                return (_evaluate(i, n));
-		 /*Recursive call*/
+                return (_evaluate(i, n)); /*Recursive call*/
 	}
 }
