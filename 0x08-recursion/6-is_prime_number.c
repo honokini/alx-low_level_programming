@@ -31,7 +31,7 @@ int evaluate_num(int num, int iterator)
 int is_prime_number(int num)
 {
 	int iterator;
-	iterotor = 2;
+	iterator = 2;
 	/*only greater than 2*/
 	if (num < 2)
 	{
@@ -41,6 +41,5 @@ int is_prime_number(int num)
 	{
 		return (1);
 	}
-	return (evaluate_number(num, iterator));
+	return (evaluate_num(num, iterator));
 }
-
