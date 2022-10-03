@@ -1,13 +1,13 @@
 #include "main.h"
 #include "stdio.h"
 /**
- * times_tables - prints the 9 times table, starting with 0
+ * times_table - prints the 9 times table, starting with 0
  * rw = row, col = columon, d = digits
  * Return: Always success
  */
-void times_tables(void)
+void times_table(void)
 {
-	int rw, c, d;
+	int rw, col, d;
 
 	for (rw = 0; rw <= 9; rw++)
 	{
