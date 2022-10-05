@@ -16,7 +16,6 @@ int _strlen(char *s)
 
 	return (i);
 }
-
 /**
  * _strcpy - copies arrays
  * @scr: array of elements
