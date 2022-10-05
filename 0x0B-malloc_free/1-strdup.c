@@ -42,7 +42,7 @@ int _strlen(char *s)
  */
 char *_strdup(char *str)
 {
-	char *dest;
+	char *dst;
 	unsigned int size;
 
 	if (str == 0)
@@ -54,10 +54,10 @@ char *_strdup(char *str)
 
 	dst = (char *) malloc(size *sizeof(char));
 
-	if (dest == 0)
+	if (dst == 0)
 	{
 		return (NULL);
 	}
-	_strcpy(dest, str);
-	return (dest);
+	_strcpy(dst, str);
+	return (dst);
 }
