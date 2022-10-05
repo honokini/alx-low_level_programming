@@ -9,7 +9,7 @@
  */
 char *str_concat(char *s1, char *s2)
 {
-	char *concat_str,
+	char *concat_str;
 	     int index, concat_index = 0,  len = 0;
 
 	if (s1 == NULL)
@@ -18,8 +18,8 @@ char *str_concat(char *s1, char *s2)
 	if (s2 == NULL)
 		s2 = "";
 
-	for (inde = 0; s1[index] || s2[index]; index++)
-		concat_str = malloc(size(char) * len);
+	for (index = 0; s1[index] || s2[index]; index++)
+		concat_str = malloc(sizeof(char) * len);
 
 	if (concat_str == NULL)
 		return (NULL);
