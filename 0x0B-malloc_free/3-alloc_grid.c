@@ -4,7 +4,7 @@
  * @height: height of anarray
  * Return: a pointer to a allocated grid
  */
-int alloc_grid(int width, int height)
+int **alloc_grid(int width, int height)
 {
 	int i, j, k, l;
 	int **a;
