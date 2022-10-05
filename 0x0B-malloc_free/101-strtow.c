@@ -1,7 +1,7 @@
 #include "main.h"
 int word_len(char *str);
 int count_words(char *str);
-int **strtow(char *str);
+char **strtow(char *str);
 /**
  * word_len -Locates the indesx marking the end  of the
  *           first word contained within a string
@@ -31,7 +31,7 @@ int count_words(char *str)
 {
 	int index = 0, words = 0, len = 0;
 
-	for (index = 0; *(str + index); index+)
+	for (index = 0; *(str + index); index++)
 		len++;
 	for (index = 0; index < len; index++)
 	{
@@ -54,7 +54,7 @@ char **strtow(char *str)
 	char **strings;
 	int index = 0, words, w, letters, l;
 
-	if (str =  NULL || str[0] == '\0')
+	if (str ==  NULL || str[0] == '\0')
 		return (NULL);
 
 	words = count_words(str);
