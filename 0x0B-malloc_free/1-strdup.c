@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * -strlen - count array
+ * _strlen - count array
  *  @s: array of elements
  *  Return: 1
  */
@@ -50,7 +50,7 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 
-	size = strlen(str) + 1;
+	size = _strlen(str) + 1;
 
 	dst = (char *) malloc(size *sizeof(char));
 
