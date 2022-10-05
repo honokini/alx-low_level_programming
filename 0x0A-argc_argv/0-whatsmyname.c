@@ -5,8 +5,8 @@
  * @argv: argument vector of pointers to string
  * Return: always 0
  */
-int main(int argc, char *argv _attribute_ ((unused)))
+int main(int argc, char __attribute__((unused)), char *argv[])
 {
-	printf("%d\n", argc - 1);
+	printf("%s\n", argc[0]);
 	return 0;
 }
