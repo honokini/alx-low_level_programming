@@ -1,5 +1,4 @@
-#include "main.h"                                                                                                                                                        
-/**
+#include "main.h"                                                               /**
  * alloc_grid - returns apointer to a       
  * 2 dimensional array of integers.
  * @width: width of arry

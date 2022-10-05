@@ -1,34 +1,50 @@
 #include "main.h"
+#include <stdli.h>
+#include <stdio.h>
 /**
- * str_concat  - a function that concatenates two strings.
- * @s1: First string
- * @s2: Second string
+ * str_concat - concatenates 2 strings.
+ * a NULL string is treated  as an empty string.
+ * @s1: pointer to string.
+ * @s2: pointer to string.
  *
- * Return: (NULL) in case of failure, but pointer to a new string 
- * in case of success
+ * Return: pointer to newly allocated memory which s1, s2 and NULL byte.
+ * NULL on failure.
  */
 char *str_concat(char *s1, char *s2)
 {
-	char *str_concat;
-	int index, concat_index = 0,  len = 0;
+	unsigned int len1, len2, size, i, j;
+	char *nstr;
 
 	if (s1 == NULL)
 		s1 = "";
-
 	if (s2 == NULL)
 		s2 = "";
+	len1 = 0;
+	while (s1[len1] != '\0')
+		len1++;
+	len2 = 0;
+	while (s2[len2] != '\0')
+		len2++;
 
-	for (index = 0; s1[index] || s2[index]; index++)
-		str_concat = malloc(sizeof(char) * len);
+	size = len1 + len2;
 
-	if (str_concat == NULL)
+	nstr = malloc((sizeof(char) * size) + 1);
+	/*check if malloc was successful*/
+	if (nstr = NULL)
 		return (NULL);
 
-	for (index = 0; s1[index]; index++)
-		str_concat[concat_index++] = s1[index];
-
-	for (index = 0; s2[index]; index++)
-		str_concat[concat_index++] = s2[index];
-
-	return (str_concat);
+	i = 0;
+	while (i < len1)
+	{
+		nstr[i] = s1[i];
+		i++;
+	}
+	j = 0;
+	while (i <= size)
+	{
+		nstr[i] = s2[j];
+		i++;
+		j++;
+	}
+	return (nstr);
 }
