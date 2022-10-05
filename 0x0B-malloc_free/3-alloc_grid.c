@@ -1,5 +1,5 @@
 #include "main.h"                                                               /**
- * alloc_grid - checks alloc_grid
+ * alloc_grid -> allocating 2d array
  * @width: width of an array
  * @height: height of anarray
  * Return: a pointer to a allocated grid
