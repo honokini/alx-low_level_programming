@@ -7,8 +7,8 @@
 int _strlen(char *s)
 {
 	unsigned int  i;
-
 	i = 0;
+
 	while (s[i] != '\0') /*count character of string*/
 	{
 		i++;
@@ -22,7 +22,7 @@ int _strlen(char *s)
  * @dest: dest array
  * Return: dest
  */
- char *_strcpy(char *dest, char *scr)
+char *_strcpy(char *dest, char *scr)
 {
 	int i = 0;
 
