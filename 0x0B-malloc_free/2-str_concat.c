@@ -4,13 +4,13 @@
  * @s1: First string
  * @s2: Second string
  *
- * Return (NULL) in case of failure, but pointer to a new string 
+ * Return: (NULL) in case of failure, but pointer to a new string 
  * in case of success
  */
 char *str_concat(char *s1, char *s2)
 {
 	char *concat_str;
-	     int index, concat_index = 0,  len = 0;
+	int index, concat_index = 0,  len = 0;
 
 	if (s1 == NULL)
 		s1 = "";
