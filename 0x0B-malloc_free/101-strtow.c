@@ -19,7 +19,7 @@ int word_len(char *str)
 		index++;
 	}
 
-	return(len);
+	return (len);
 }
 /**
  * count_words - Counts the number of the words contained within a string.
