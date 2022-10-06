@@ -21,7 +21,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 
 	mem = malloc(size * nmemb);
 
-	if (nmemb == NULL)
+	if (mem == NULL)
 		return (NULL);
 
 	filler = mem;
