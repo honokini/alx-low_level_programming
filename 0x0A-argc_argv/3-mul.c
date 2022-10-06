@@ -6,7 +6,7 @@
  * @argc: argument that contains argument input
  * @argv: argument that stores the strings in an array of char* (strings)
  *
- * Return: 0
+ * Return: 1
  */
 int main(int argc, char *argv[])
 {
@@ -21,5 +21,5 @@ int main(int argc, char *argv[])
 		mul = num_1 * num_2;
 		printf("%d\n", mul);
 	}
-	return (0);
+	return (1);
 }
