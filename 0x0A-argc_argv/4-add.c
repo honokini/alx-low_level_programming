@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <ctype.h>
 
+
 /**
  * main -adds numbers
  * @argc: number of arguments passed to the function
@@ -19,7 +20,7 @@ int main(int argc, char *argv[])
 		{
 			if (isdigit(argv[i][j]) == 0)
 			{
-				puts("Error\n");
+				puts("Error");
 				return (1);
 			}
 		}
