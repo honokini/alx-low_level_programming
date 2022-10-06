@@ -6,14 +6,17 @@
  * @argc: argument that contains argument input
  * @argv: argument that stores the strings in an array of char* (strings)
  *
- * Return: 1
+ * Return: 0
  */
 int main(int argc, char *argv[])
 {
 	int num_1, num_2, mul;
 
 	if (arg != 3)
+	{
 		printf("Error\n");
+		return (1);
+	}
 	else
 	{
 		num_1 = atoi(argv[1]);
