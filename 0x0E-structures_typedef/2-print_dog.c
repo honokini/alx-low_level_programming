@@ -4,8 +4,9 @@
 
 /**
  * print_dog - Prints struct dog 
- * @d: The struct dog to be printed
+ * @d:The struct dog to be printed
  */
+
 void print_dog(struct dog *d)
 {
 	if (d == NULL)
