@@ -3,7 +3,7 @@
 
 int _strlen(char *str);
 char *_strcopy(char *dest, char *str);
-dog_t *new_dog(char *name, foat age, char *owner);
+dog_t *new_dog(char *name, float age, char *owner);
 
 /**
  * _strlen - Finds the lenght of a string
@@ -11,7 +11,6 @@ dog_t *new_dog(char *name, foat age, char *owner);
  *
  * Return: The length of the string.
  */
-
 int _strlen(char *str)
 {
 	int len = 0;
@@ -20,6 +19,7 @@ int _strlen(char *str)
 		len++;
 	return (len);
 }
+
 /**
  * _strcopy - Copies a string printed by to str, including the 
  *            terminating  null byte to a buffer pointed to by dest.
@@ -32,7 +32,7 @@ char *_strcopy(char *dest, char *src)
 {
 	int index = 0;
 
-	for (index = 0; src[index]; inde++)
+	for (index = 0; src[index]; index++)
 		dest[index] = src[index];
 
 	dest[index] = '\0';
@@ -52,7 +52,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *doggo;
 
-	if (name == NULL ||  age < 0 || owner == NULL)
+	if (name == NULL || age < 0 || owner == NULL)
 		return (NULL);
 
 	doggo = malloc(sizeof(dog_t));
@@ -77,6 +77,5 @@ dog_t *new_dog(char *name, float age, char *owner)
 	doggo->age = age;
 	doggo->owner = _strcopy(doggo->owner, owner);
 	
-	return(doggo);
+	return (doggo);
 }
-
