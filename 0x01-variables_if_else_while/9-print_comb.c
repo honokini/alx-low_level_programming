@@ -1,24 +1,23 @@
+#include <time.h>
 #include <stdio.h>
 /**
- * main - Prints single digit numbers starting from 0 to 9.
- * Description: Using the main function
- * this program prints "0, 1, 2, 3, 4, 5, 6, 7, 8, 9"
- * Return: 0
- */
+* main - Entry point
+* Return: return zero at the end
+*/
 int main(void)
 {
-	int c;
+	int d;
 
-	for (c = 58; c <= 57; c++)
+	for (d = '0'; d <= '9'; d++)
 	{
-		putchar(c);
-
-		if (c != 57)
+		putchar(d);
+		if (d != '9')
 		{
 			putchar(',');
 			putchar(' ');
 		}
 	}
 	putchar('\n');
+
 	return (0);
 }
