@@ -2,7 +2,7 @@
 #include <stdio.h>
 /**
 *
-* main - print possible combination of two 2-gigit
+* main - Entry point
 * numbers
 *
 * Return: return zero at the end
