@@ -1,7 +1,7 @@
 #include <time.h>
 #include <stdio.h>
 /**
-* main - print single digit numbers starting from 0
+* main - prints single digit numbers starting from 0
 *
 * Return: return zero at the end
 */
