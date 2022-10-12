@@ -15,19 +15,21 @@ int int_index(int *array, int size, int (*cmp)(int))
 	if (array && cmp)
 	{
 		if (size <= 0)
-			return (res);
-	}
-	for (i = 0; i < size; i++)
-	{
-		cmp(array[i]);
-		if (cmp(array[i]) > 0)
 		{
-			res = i;
-			break;
+			return (res);
 		}
-		if ((cmp(array[i]) == (-1)))
+		for (i = 0; i < size; i++)
 		{
-			return (res);
+			cmp(array[i]);
+			if (cmp(array[i]) > 0)
+			{
+				res = i;
+				break;
+			}
+			if ((cmp(array[i]) == (-1)))
+			{
+				return (res);
+			}
 		}
 	}
 	return (res);
