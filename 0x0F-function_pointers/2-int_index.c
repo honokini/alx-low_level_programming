@@ -7,8 +7,9 @@
  * Return: Index of first element.
  * -1 if no element is found or size <= 0.
  */
-int int_index(int *array, size_t size, (*action)(int))
+int int_index(int *array, int size, int (*cmp)(int))
 {
+
 	int i, res;
 
 	res = -1;
@@ -32,4 +33,3 @@ int int_index(int *array, size_t size, (*action)(int))
 	}
 	return (res);
 }
-
