@@ -3,11 +3,11 @@
 #include <stdarg.h>
 
 /**
- * print_strings - Prints string
+ * print_strings - prints string
  * @separator: string to be printed between the strings.
- * @n: Number of strings passed to the function.
+ * @n: number of strings passed to the function.
  *
- * Return: No return.
+ * Return: no return.
  */
 void print_strings(const char *separator, const unsigned int n, ...)
 {
