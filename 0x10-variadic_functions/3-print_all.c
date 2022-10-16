@@ -8,7 +8,7 @@
  *
  * Return: no return.
  */
-void_print(const char * const format, ...)
+void all_print(const char * const format, ...)
 {
 	va_valist;
 	unsigned int i = 0, j, c = 0;
@@ -39,7 +39,15 @@ void_print(const char * const format, ...)
 				prinf("%f", va_arg(valist, double)), c = 3;
 				break;
 			case 4:
-				str = va_arg(valist, char *), c = 5;
+				str = va_arg(valist, char *), c = 4;
 				if (!str)
 				{
-					printf(
+					printf("(nil)");
+					break;
+				}
+				printf("%s", str);
+				break;
+		}i++;
+	}
+	printf("\n"), va_end(valist);
+}
