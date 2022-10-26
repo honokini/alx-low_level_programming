@@ -16,5 +16,6 @@ size_t print_listint(const listint_t *h)
 		count += 1;
 		cursor = cursor->next;
 	}
+
 	return (count);
 }
