@@ -13,17 +13,21 @@ void free_listp(listp_t **head)
 
 	if (head != NULL)
 	{
-		curr = curr->next;
-		free(temp);
+		curr = *head;
+		while ((temp = curr) != NULL)
+		{
+			curr = curr->next;
+			free(temp);
+		}
+		*head = NULL;
 	}
-	*head = NULL;
 }
 
 /**
  * print_listint_safe -prints a linked list.
  * @head: head of a list.
  *
- * return: number of nodes in the list.
+ * Return: number of nodes in the list.
  */
 size_t print_listint_safe(const listint_t *head)
 {
