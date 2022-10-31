@@ -25,8 +25,8 @@ void error_file(int file_from, int file_to, char *argv[])
 /**
  * main - main check the code for Holberton school students.
  * @argc: number of arguments.
- * @argv: Always 0.
- * Return: 0.
+ * @argv: arguments vector.
+ * Return: Always 0
  */
 int main(int argc, char *argv[])
 {
