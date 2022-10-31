@@ -6,7 +6,6 @@
  * @file_from: file_from.
  * @file_to: file_to.
  * @argv: arguments vector.
- *
  * Return: no return.
  */
 void error_file(int file_from, int file_to, char *argv[])
@@ -58,7 +57,7 @@ int main(int argc, char *argv[])
 	err_close = close(file_from);
 	if (err_close == -1)
 	{
-		dprintf(STDERR_FILENO, "Error/ can't close fd %d\n", file_from);
+		dprintf(STDERR_FILENO, "Error: can't close fd %d\n", file_from);
 		exit(100);
 	}
 
