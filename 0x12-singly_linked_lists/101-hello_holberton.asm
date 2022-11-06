@@ -16,6 +16,6 @@ main:
     mov rax,0
     ret
 
-selection .data
+section .data
      msg: db "Hello, Holberton", 0
      fmt: db "%s", 10, 0
