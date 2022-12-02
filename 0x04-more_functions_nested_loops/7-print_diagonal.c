@@ -1,30 +1,28 @@
-#include <stdio.h>
 #include "main.h"
+
 /**
- * print_diagonal - prints a diagonal
- * @n: parameter
- * Return: returns nothing
+ * print_diagonal - This draws a diagonal line using characters \.
+ * @n - the number of \   charactor to be drawn.
  */
 void pint_diagonal(int n)
 {
-	int len, space;
-	
+	int line, gap;
+
 	if (n > 0)
 	{
-		for (len = 0; len < n; len++)
-		{
-			for(space = 0;space < len; space++)
-			{
-				putchar(' ');
-			}
-			putchar('\\');
-
-			if (len == (n - 1))
-			{
-				continue;
-			}
-			putchar('\n');
-		}
+	for (line = 0; line <= n; line++)
+	{
+	for (gap = 0; gap <= line; gap++)
+	{
+	_putchar(' ');
 	}
-	putchar('\n');
+	_putchar('\\');
+	if (line == n - 1)
+	{
+	continue;
+	}
+	_putchar('\n');
+	}
+	}
+	_putchar('\n');
 }
