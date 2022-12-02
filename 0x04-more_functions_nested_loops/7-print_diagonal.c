@@ -2,7 +2,7 @@
 
 /**
  * print_diagonal - This draws a diagonal line using characters \.
- * @n - the number of \   charactor to be drawn.
+ * @n - the number of \ charactor to be drawn.
  */
 void pint_diagonal(int n)
 {
