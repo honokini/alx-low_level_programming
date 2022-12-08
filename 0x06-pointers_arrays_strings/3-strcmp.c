@@ -1,21 +1,38 @@
 #include "main.h"
 /**
- * _strncat - concatenates two strings
- * @dest: The string to appended upon.
- * @src: The string to be appended to dest.
- * @n: The number of bytes from src to be appended to dest.
- *
- * Return: A pointer to the resulting string dest.
+ * _strcmp - Function which compare two strings and
+ * @s1: first string
+ * @s2: second string
+ * Return:
+ *                returns zero if s1 == s2
+ *                returns negative number if s1 < s2
+ *                returns positive number if s1 > s2
  */
-char *_strncat(char *dest, char *src, int n)
+int _strcmp(char *s1, char *s2)
 {
-	int index = 0, dest_len = 0;
+	int i = 0, diff = 0;
 
-	while (dest[index++])
-		dest_len++;
-
-	for (index = 0; src[index] && index < n; index++)
-		dest[dest_len++] = src[index];
-
-	return (dest);
+	while (1)
+	{
+		if (s1[i] == '\0' && s2[i] == '\0')
+			break;
+		else if (s1[i] == '\0')
+		{
+			diff = s2[i];
+			break;
+		}
+		else if (s2[i] == '\0')
+		{
+			diff = s1[i];
+			break;
+		}
+		else if (s1[i] != s2[i])
+		{
+			diff = s1[i] - s2[i];
+			break;
+		}
+		else
+			i++;
+	}
+	return (diff);
 }
