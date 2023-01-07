@@ -7,7 +7,7 @@
  * @key: The key to get the value of.
  *
  * Return: If the key cannot be matched -NULL.
- *         Otherwise - the value associeted with the key in ht.
+ *         Otherwise - the value associated with the key in ht.
  */
 char *hash_table_get(const hash_table_t *ht, const char *key)
 {
@@ -16,6 +16,7 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 
 	if (ht == NULL || key == NULL || *key == '\0')
 		return (NULL);
+
 	index = key_index((const char *) key, ht->size);
 	if (index >= ht->size)
 		return (NULL);
