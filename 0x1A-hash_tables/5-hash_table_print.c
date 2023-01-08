@@ -2,10 +2,10 @@
 
 /**
  * hash_table_print - Prints a hash table.
- * @ht: A pointer to hash table to print.
+ * @ht: A pointer to the hash table to print.
  *
  * Description: key/value pairs are printed in the order
- *              they appear in the araray of the hash table.
+ *              they appear in the array of the hash table.
  */
 void hash_table_print(const hash_table_t *ht)
 {
